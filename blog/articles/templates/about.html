@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+ Обо мне :: iTechAutoBlog
+{% endblock %}
+{%block content %}
+<div class="About-bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="aboutheading">
+               <h3>обо <span class="orange_color">мне</span></h3>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+      <!-- section -->
+      <div class="section layout_padding">
+         <div class="container">
+
+            <div class="row">
+   <div class="col-md-6">
+                  <div class="full blog_cont">
+                     <h3>Привет, это Андрей!</h3>
+                     <p>10 лет работал в автобизнесе. Хочу стать программистом. Этот блог мой Pet-проект. Создан
+                     на Python/Django.</p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="{% static 'images/marketing_img.png' %}" alt="#" />
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <!-- end section -->
+{% endblock %}
